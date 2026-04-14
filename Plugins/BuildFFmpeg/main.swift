@@ -30,7 +30,7 @@ extension Build {
 #endif
 
 extension Build {
-    static var ffmpegConfiguers = [String]()
+    nonisolated(unsafe) static var ffmpegConfiguers = [String]()
     static func performCommand(arguments: [String]) throws {
         print(arguments)
         if arguments.contains("h") || arguments.contains("-h") || arguments.contains("--help") {
@@ -340,14 +340,14 @@ enum Library: String, CaseIterable {
 }
 
 class BaseBuild {
-    static var platforms = PlatformType.allCases
+    nonisolated(unsafe) static var platforms = PlatformType.allCases
         .filter {
             ![.watchos, .watchsimulator, .android].contains($0)
         }
 
-    static var notRecompile = false
-    static var gitCloneAll = false
-    static var disableGPL = false
+    nonisolated(unsafe) static var notRecompile = false
+    nonisolated(unsafe) static var gitCloneAll = false
+    nonisolated(unsafe) static var disableGPL = false
     let library: Library
     let directoryURL: URL
     init(library: Library) {

@@ -1,8 +1,8 @@
 .DS_Store
-/.build
+.build/
 /Packages
 xcuserdata
-.swiftpm
+.swiftpm/
 Script
 .Script
 Demo/Pods

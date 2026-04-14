@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Debug ffmpeg",
+            "target": "ffmpeg",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug ffmpeg"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Release ffmpeg",
+            "target": "ffmpeg",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release ffmpeg"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Debug ffplay",
+            "target": "ffplay",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug ffplay"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Release ffplay",
+            "target": "ffplay",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release ffplay"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Debug ffprobe",
+            "target": "ffprobe",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug ffprobe"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FFmpegKit}",
+            "name": "Release ffprobe",
+            "target": "ffprobe",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release ffprobe"
+        }
+    ]
+}
